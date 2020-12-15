@@ -4,5 +4,4 @@ Aplikacja złożona jest z 2 folderów.
 1. server - należy najpierw zainstalować zależności komendą npm install a następnie uruchomić najlepiej jako pierwszy za pomocą npm start.
 2. web - należy najpierw zainstalować zależności komendą npm install a następnie uruchomić za pomocą komendy npm start.
 
-Baza danych to MongoDb, która działa w chmurze.
 
