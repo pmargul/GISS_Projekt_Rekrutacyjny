@@ -3,7 +3,6 @@
 const uri = "mongodb+srv://admin:4pWbLaT8a4T79We@taskdatacluster.fcsk9.mongodb.net/giss_tasks?retryWrites=true&w=majority";
 
 function initializeMongoDb(){
-    console.log('INITIALIZE')
     mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
     const db = mongoose.connection;
     db.on('error', (error) => console.error(error));
