@@ -17,6 +17,6 @@ app.use('/', service.route);
 
 app.listen(8000, () => {
     db.initializeMongoDb()
-    console.log('Example app listening on port 8000!')
+    console.log('Server listening on port 8000!')
 });
 
