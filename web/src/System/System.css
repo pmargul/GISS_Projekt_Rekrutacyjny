@@ -1,0 +1,82 @@
+*,
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+.text-primary {
+  color: #323587 !important;
+}
+.text-header {
+  color: #ffffff !important;
+}
+.header {
+  padding: 10px;
+  background-color: black;
+}
+.strong {
+  font-weight: bold;
+}
+.right-margin-off {
+  margin-right: 0em;
+}
+.table-row-selected td{
+  color: white;
+  background-color: rgb(94, 94, 94) !important;
+}
+.table-header {
+  background-color: rgb(36, 36, 36);
+  border-color: rgb(36, 36, 36);
+  border-bottom-width: initial;
+  color: white;
+}
+.right-margin-on {
+  margin-right: 5px;
+}
+.page-link {
+  background-color: white;
+  color: black;
+}
+.btn-outline:focus {
+  display: none;
+  outline: none !important;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #ffffff;
+  background-color: darkorange;
+  border-color: darkorange;
+}
+.modal-danger{
+  background-color: #dc3545!important;
+  border-color: #dc3545!important;
+  color: #ffffff;
+}
+.modal-success{
+  background-color: #28a745!important;
+  border-color: #28a745!important;
+  color: #ffffff;
+}
+
+.modal-primary{
+  background-color: rgb(233, 129, 1) !important;
+  border-color: rgb(233, 129, 1) !important;
+  color: #ffffff;
+}
+
+.modal-warning{
+  background-color: #ffc107!important;
+  border-color: #ffc107!important;
+  color: #ffffff;
+}
+.modal-footer{
+  justify-content: space-between;
+}
+
+.btn-primary,.btn-primary:disabled{
+  background-color: rgb(233, 129, 1);
+  border-color:  rgb(233, 129, 1);;
+}
+.btn-primary:hover{
+  background-color: darkorange;
+  border-color: darkorange;
+}
