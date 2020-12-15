@@ -60,7 +60,7 @@ router.put('/tasks/switch-realized',async (req,res)=>{
                 res.status(200).json({
                      message: 'Zadanie o numerze: '+task.number+" zostało pomyślnie oznaczone jako "+(realizedUpdate? "wykonane" : "niewykonane"),
                      title: "Operacja zakończona pomyślnie",
-                     type: "primary",
+                     type: "success",
                      success: true
                 });
             }
@@ -116,7 +116,7 @@ router.delete('/tasks', async (req,res)=>{
         res.json({ 
             message: 'Zadanie o numerze: '+req.body.number+" zostało pomyślnie usunięte",
             title: "Operacja zakończona pomyślnie",
-            type: "primary",
+            type: "success",
             success: true
         });
     } catch (err){

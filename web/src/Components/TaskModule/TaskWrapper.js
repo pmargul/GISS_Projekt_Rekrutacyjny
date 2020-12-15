@@ -19,6 +19,8 @@ function TaskWrapper(props) {
 
   const [fetchProcessing, setFetchProcessingState] = useState(true);
 
+  const [selectedPage, selectPage] = useState(1);
+
   const [selectedRow, selectRow] = useState(null);
   const [tableData, setTableData] = useState([]);
 
@@ -72,6 +74,8 @@ function TaskWrapper(props) {
             data={tableData}
             selectRow={selectRow}
             selectedRow={selectedRow}
+            selectPage={selectPage}
+            selectedPage={selectedPage}
             selectedTask={selectedTask}
             fetchProcessing={fetchProcessing}
             onRefresh={()=>refreshTaskData(props)}

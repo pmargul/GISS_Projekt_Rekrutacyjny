@@ -11,7 +11,6 @@ function TaskTableWrapper(props) {
   const lang = useSelector(state => state.system.language)
 
   const [inputValue, onValueChange] = useState("");
-  const [selectedPage, selectPage] = useState(1);
 
   const tableData = props.data;
   const filteredData = tableData.filter((task) => {
@@ -26,8 +25,8 @@ function TaskTableWrapper(props) {
   });
 
   const currentPageData = filteredData.filter((el, index) => {
-    const selectedPageMinIndex = (selectedPage - 1) * 5;
-    const selectedPageMaxIndex = selectedPage * 5;
+    const selectedPageMinIndex = (props.selectedPage - 1) * 5;
+    const selectedPageMaxIndex = props.selectedPage * 5;
     if ((index >= selectedPageMinIndex) & (index < selectedPageMaxIndex))
       return true;
     return false;
@@ -42,14 +41,14 @@ function TaskTableWrapper(props) {
           <div className="row mb justify-content-end">
             <Pagination
               length={filteredData.length}
-              selectedPage={selectedPage}
-              selectPage={selectPage}
+              selectedPage={props.selectedPage}
+              selectPage={props.selectPage}
             />
             <SearchBar
               inputValue={inputValue}
               onValueChange={(e) => {
                 props.selectRow(null);
-                selectPage(1);
+                props.selectPage(1);
                 onValueChange(e);
               }}
             />
@@ -59,7 +58,7 @@ function TaskTableWrapper(props) {
             selectedRow={props.selectedRow}
             selectRow={props.selectRow}
             columns={TaskTableColumns(lang)}
-            currentPage={selectedPage}
+            currentPage={props.selectedPage}
           />
           <TaskOptionButtons
             inputValue={inputValue}

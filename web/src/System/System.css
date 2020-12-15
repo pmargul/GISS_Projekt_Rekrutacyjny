@@ -19,7 +19,7 @@ body {
 .right-margin-off {
   margin-right: 0em;
 }
-.table-row-selected td{
+.table-row-selected td {
   color: white;
   background-color: rgb(94, 94, 94) !important;
 }
@@ -46,37 +46,48 @@ body {
   background-color: darkorange;
   border-color: darkorange;
 }
-.modal-danger{
-  background-color: #dc3545!important;
-  border-color: #dc3545!important;
+.modal-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
   color: #ffffff;
 }
-.modal-success{
-  background-color: #28a745!important;
-  border-color: #28a745!important;
+.modal-success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
   color: #ffffff;
 }
 
-.modal-primary{
+.modal-primary {
   background-color: rgb(233, 129, 1) !important;
   border-color: rgb(233, 129, 1) !important;
   color: #ffffff;
 }
 
-.modal-warning{
-  background-color: #ffc107!important;
-  border-color: #ffc107!important;
+.modal-warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
   color: #ffffff;
 }
-.modal-footer{
+.modal-footer {
   justify-content: space-between;
 }
 
-.btn-primary,.btn-primary:disabled{
+.btn-primary,
+.btn-primary:disabled {
   background-color: rgb(233, 129, 1);
-  border-color:  rgb(233, 129, 1);;
+  border-color: rgb(233, 129, 1);
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: darkorange;
   border-color: darkorange;
 }
+
+.alert-custom {
+  position: fixed;
+  top: 110px;
+  right: 5px;
+  width: 20%;
+  z-index: 9999;
+  border-radius: 0px;
+}
+
